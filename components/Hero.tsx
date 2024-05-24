@@ -1,3 +1,4 @@
+import { FaEye } from "react-icons/fa6";
 import ShimmerButton from "./ui/ShimmerButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -9,6 +10,10 @@ const Hero = () => {
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
+        />
+        <Spotlight
+          className="h-[80vh] w-[50vw] top-10 left-full"
+          fill="purple"
         />
       </div>
       <div className="flex justify-center my-20 z-10">
@@ -24,7 +29,11 @@ const Hero = () => {
             Hi, I&apos;m Dmitrii, a JavaScript developer from Moldova.
           </p>
           <a href="#about">
-            <ShimmerButton title="Show my work" />
+            <ShimmerButton
+              title="Show my work"
+              icon={<FaEye />}
+              position="right"
+            />
           </a>
         </div>
       </div>
