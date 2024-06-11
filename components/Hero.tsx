@@ -1,7 +1,7 @@
 import { FaEye } from "react-icons/fa6";
-import ShimmerButton from "./ui/ShimmerButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
             Unleashing the Power of Technology: Node.js, Django, and Beyond
           </p>
           <a href="#about">
-            <ShimmerButton
+            <MagicButton
               title="Show my work"
               icon={<FaEye />}
               position="right"
