@@ -35,6 +35,7 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
