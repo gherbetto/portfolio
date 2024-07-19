@@ -1,0 +1,19 @@
+{
+    "IntroSection": {
+        "hello_im": "Hi, I'm",
+        "name": "Dmitrii",
+        "short_intro": ", a JavaScript developer from Moldova",
+        "contact_me": "Contact me",
+        "download_cv": "Download CV"
+    },
+    "SectionName": {
+        "about": "About me",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact me"
+    },
+    "AboutSection": {
+        "desc": "Short description about myself for all of the internet!"
+    }
+}
