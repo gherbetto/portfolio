@@ -41,20 +41,6 @@ export default function Intro() {
                   className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
               />
             </motion.div>
-
-            <motion.span
-                className="absolute right-0 bottom-0 text-4xl"
-                initial={{ scale: 0, rotate: -180 }}
-                animate={{ scale: 1, rotate: 0 }}
-                transition={{
-                  type: 'spring',
-                  stiffness: 260,
-                  delay: 0.2,
-                  duration: 0.7,
-                }}
-            >
-              👋
-            </motion.span>
           </div>
         </div>
         <motion.h1
@@ -89,23 +75,23 @@ export default function Intro() {
                 setActiveSection("Contact")
                 setTimeOfLastClick(Date.now())
               }}
-              className="bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="bg-gray-900 text-white py-2 px-3 text-sm flex items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] hover:bg-gray-950 active:scale-105 transition cursor-pointer"
           >
             {t("contact_me")}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
+            <BsArrowRight/>
           </Link>
           <a
               href={
                 activeLocale == "en" ? "/dmitrii-en-resume.pdf" : "/dmitrii-ru-resume.pdf"
               }
               download={true}
-              className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className=" bg-white py-2 px-3 text-sm flex items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] hover:dark:bg-white/20 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           >
             {t("download_cv")}
             <HiDownload/>
           </a>
           <a
-              className="bg-white p-2 text-md text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="bg-white p-2 text-md text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.10] hover:scale-[1.10] hover:text-gray-950 hover:dark:bg-white/20 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
               href="https://www.linkedin.com/in/dmitrii-gherastovschi/"
               target="_blank"
           >
@@ -113,7 +99,7 @@ export default function Intro() {
           </a>
 
           <a
-              className="bg-white p-2 text-md text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="bg-white p-2 text-md text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.10] hover:scale-[1.10] hover:text-gray-950 hover:dark:bg-white/20 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
               href="https://github.com/gherbetto"
               target="_blank"
           >

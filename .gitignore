@@ -190,4 +190,4 @@ sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,visualstudiocode,react,nextjs
 # Project exclude paths
-/tailwind.config.js
+/tailwind.config.ts

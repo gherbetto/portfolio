@@ -13,8 +13,8 @@ export default function SectionDivider() {
           delay: 0.1,
         }}
     >
-      <Link href="#about" className="mt-12 mb-20 hidden sm:block bg-white p-2 text-md text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" >
-        <IoIosArrowDown className="opacity-70 group-hover:translate-x-1 transition" />
+      <Link href="#about" className="mt-12 mb-20 hidden sm:block bg-white p-2 text-md text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.10] hover:scale-[1.10] hover:text-gray-950 hover:dark:bg-white/20 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" >
+        <IoIosArrowDown/>
       </Link>
     </motion.div>
   )

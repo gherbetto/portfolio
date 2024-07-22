@@ -21,12 +21,12 @@ export default function LanguageSwitch() {
     <>
       <button
         onClick={onChangeLanguage}
-        className="w-[2.5rem] h-[2.5rem] bg-opacity-80 flex items-center justify-center gap-1 transition-all "
+        className="w-[2.5rem] h-[2.5rem] bg-opacity-80 flex items-center justify-center gap-1 transition-all"
       >
         <span className="sr-only">Change Language</span>
         {/* <IoLanguageOutline /> */}
 
-        <span className="text-sm hover:scale-[1.15] active:scale-105 transition-all">
+        <span className="text-sm hover:scale-[1.10] active:scale-105 hover:dark:text-white transition-all">
           {" "}
           {localActive == "en" ? "EN" : "RU"}
         </span>
