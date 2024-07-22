@@ -1,8 +1,9 @@
 {
     "IntroSection": {
         "hello_im": "Hi, I'm",
-        "name": "Dmitrii",
-        "short_intro": ", a JavaScript developer from Moldova",
+        "name": "Dmitrii,",
+        "occupation": "Frontend developer",
+        "short_intro": "from Moldova.",
         "contact_me": "Contact me",
         "download_cv": "Download CV"
     },
