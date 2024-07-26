@@ -39,13 +39,16 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack rounded-full px-5 py-3 text-gray-700 hover:text-gray-950 dark:bg-white/10 dark:text-white/80 hover:dark:bg-white/20"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
             viewport={{
               once: true,
+            }}
+            whileHover={{
+              scale: 1.10,
             }}
             custom={index}
           >
