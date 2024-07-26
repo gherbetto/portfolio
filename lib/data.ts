@@ -2,7 +2,8 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import { FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import projectImage from "@/public/Busniess-Web-Banner-11.jpg";
+import goodWorkImage from "@/public/goodworksu.png";
+import projectImage from "@/public/Busniess-Web-Banner-11.jpg"
 
 export const links = [
     {
@@ -120,14 +121,14 @@ export type ProjectTags = typeof projectsData[number]["tags"];
 
 export const projectsData = [
     {
-        title: "Project title",
-        title_ru: "Название проекта",
+        title: "Good Work Loaders",
+        title_ru: "Good Work Loaders",
         description:
             "Short description of my project. What it is and what it does.",
-        desc_ru: "Краткое описание своего проекта, что он из себя представляет и как работает.",
-        tags: ["React", "TypeScript", "Tailwind", 'Framer Motion'],
-        imageUrl: projectImage,
-        projectUrl: 'https://github.com/',
+        desc_ru: "Современный и функциональный веб-сайта для компании, специализирующейся на ввозе и продаже фронтальных погрузчиков и спецтехники из Китая.",
+        tags: ["HTML", "SCSS", "JavaScript", 'Alpine.js', 'Python', 'Django', 'Wagtail CMS'],
+        imageUrl: goodWorkImage,
+        projectUrl: 'https://goodwork.su/',
         demoUrl: 'https://demo.page/',
     },
     {

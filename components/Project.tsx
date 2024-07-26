@@ -4,7 +4,6 @@ import { useRef } from "react"
 import { projectsData } from "@/lib/data"
 import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { FaGithubSquare } from "react-icons/fa"
 import Link from "next/link"
 import { FiExternalLink } from "react-icons/fi"
 import { useLocale } from "next-intl"
@@ -39,37 +38,20 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[28rem]  transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 ">
+      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[24rem] transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 hover:dark:bg-white/20">
         <div className="group pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col items-start gap-3 h-full sm:group-even:ml-[18rem]">
-          <div className="flex flex-col gap-3 items-start ">
-            <h3 className="text-2xl font-semibold group-hover:text-pink dark:group-hover:text-yellow hover:underline">
+          <Link
+              href={projectUrl}
+              target="_blank"
+              className="w-full flex items-center gap-1  hover:underline underline-offset-2"
+          >
+            <h3 className="text-2xl font-semibold hover:underline">
               {activeLocale === "ru" ? title_ru : title}
             </h3>
-
-            <div className="flex gap-3 text-sm text-gray-500 dark:text-gray-300">
-              {" "}
-              <Link
-                href={projectUrl}
-                target="_blank"
-                className="w-full flex items-center gap-1  hover:underline underline-offset-2"
-              >
-                <span className="break-keep">Code</span>
-
-                <FaGithubSquare className="w-5 h-5" />
-              </Link>
-              {demoUrl && (
-                <Link
-                  href={demoUrl}
-                  target="_blank"
-                  className=" w-full flex items-center gap-1 hover:underline underline-offset-2"
-                >
-                  <span className="break-keep min-w-[4.5rem]">Live demo</span>
-                  <FiExternalLink className="w-5 h-5 " />
-                </Link>
-              )}
+            <div className="text-2xl">
+              <FiExternalLink />
             </div>
-          </div>
-
+          </Link>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {activeLocale === "ru" ? desc_ru : description}
           </p>
